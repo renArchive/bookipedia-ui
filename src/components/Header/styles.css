@@ -1,0 +1,19 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+ul:last-child {
+    align-self: flex-end;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+.carousel {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s linear;
+}
+
+.carousel_buttons {
+    height: 50px;
+}
+
+.carousel_buttons:hover {
+    cursor: pointer;
+    height: 60px;
+}
+
+.carousel_description {
+    align-self: flex-end;
+    background-color: rgb(17, 76, 96);
+    opacity: 0.9;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+    width: 50%;
+    text-align: center;
+}

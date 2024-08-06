@@ -1,0 +1,14 @@
+.paginator {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    color: rgb(134, 134, 134)
+}
+
+.paginator button {
+    margin-left: 10px;
+}
+
+.paginator select {
+    margin-left: 10px;
+}
