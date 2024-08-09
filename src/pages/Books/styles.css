@@ -120,57 +120,6 @@
    color: orange;
 }
 
-.catalogue_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-    grid-auto-rows: auto;
-    grid-gap: 5px;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.catalogue_card {
-    height: 300px;
-    position:relative;
-    display:inline-block;
-    margin:10px;
-}
-
-.catalogue_container img {
-    max-height: 300px;
-}
-
-.catalogue_overlay {
-    display: none;
-}
-
-.catalogue_card:hover .catalogue_overlay {
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.5);
-    position:absolute;
-    left:0;
-    display:inline-block;
-    box-sizing:border-box;
-    text-align:center;
-    color:white;
-    padding:12px;
-    font-size:40px;
-    font-weight: bold;
-    padding-top: 100px;
-}
-.catalogue_overlay a {
-    font-size: 20px;
-}
-
-.catalogue_rate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .sort_label {
     margin-bottom: 10px;
 }

@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Catalogue from './pages/Catalogue';
+import Books from './pages/Books';
 import Login from './pages/Login';
 
 
@@ -16,7 +16,7 @@ function App() {
     },
     {
       path: "/books",
-      element: <Catalogue />,
+      element: <Books />,
     },
     {
       path: "/login",
