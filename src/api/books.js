@@ -15,3 +15,33 @@ export async function getBooks({ filterByAuthor, filterBySeries, genreFilter, so
         console.log(e);
     }
 }
+
+export async function getBooksList() {
+    try {
+        const books = await axios.get(
+            `http://localhost:3002/books/list`
+        );
+
+        if (books.status === 200) {
+            return books.data
+        }
+
+        return null
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+export async function getBooksByName({ name }) {
+    try {
+        const books = await axios.get(
+            `http://localhost:3002/books?searchBy=${name}`
+        );
+
+        if (books.status === 200) {
+            return books.data
+        }
+    } catch (e) {
+        console.log(e);
+    }
+}

@@ -45,6 +45,11 @@
     display: flex;
 }
 
+.filters ul {
+    list-style: none;
+    display: inline-flex;
+}
+
 .filters_label {
     display: flex;
     color: lightslategray;
@@ -117,7 +122,7 @@
 
 .filters_buttons:hover {
    cursor: pointer;
-   color: orange;
+   color: gray;
 }
 
 .sort_label {

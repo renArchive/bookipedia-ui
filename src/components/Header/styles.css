@@ -1,19 +1,26 @@
-ul {
+.header ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     align-items: center;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-ul:last-child {
+.header li {
+    margin: 20px;
+}
+
+.header ul:last-child {
     align-self: flex-end;
 }
 
-a:hover {
+.header a:hover {
     color: lightcoral;
 }
 
-a {
+.header a {
     color: white;
     text-decoration: none;
 }

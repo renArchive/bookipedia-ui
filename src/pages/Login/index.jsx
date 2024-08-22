@@ -1,3 +1,6 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { login } from '../../redux/userSlice';
+
 import './styles.css';
 
 function getLabel (type) {
@@ -12,6 +15,10 @@ function getLabel (type) {
 }
 
 function Login ({type = 'login'}) {
+    const user = useSelector((state) => state.user);
+    const dispatch = useDispatch();
+    console.log('User session', user);
+
     const label = getLabel(type);
     return (
         <div className='login_container'>
@@ -25,7 +32,7 @@ function Login ({type = 'login'}) {
                 <div>
                   <input type="password" placeholder="password"/>
                 </div>
-                <button>{label}</button>
+                <button onClick={() => dispatch(login)}>{label}</button>
 
                 {type === 'login' && (
                     <>
