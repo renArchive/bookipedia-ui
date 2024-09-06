@@ -10,8 +10,9 @@ export async function getGenres () {
             return genres.data.genres
         }
 
-        return null
+        return null;
     } catch (e) {
-        console.log(e);
+        console.error(e);
+        return null;
     }
 }

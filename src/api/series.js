@@ -10,8 +10,9 @@ export async function getSeries () {
             return series.data.series
         }
 
-        return null
+        return null;
     } catch (e) {
-        console.log(e);
+        console.error(e);
+        return null;
     }
 }

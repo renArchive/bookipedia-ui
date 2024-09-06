@@ -16,11 +16,12 @@
     align-self: flex-end;
 }
 
-.header a:hover {
+.header li:hover {
     color: lightcoral;
+    cursor: pointer;
 }
 
-.header a {
+.header li {
     color: white;
     text-decoration: none;
 }

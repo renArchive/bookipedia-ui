@@ -10,9 +10,9 @@ export async function getBooks({ filterByAuthor, filterBySeries, genreFilter, so
             return books.data
         }
 
-        return null
+        return null;
     } catch (e) {
-        console.log(e);
+        throw new Error('Could not fetch books');
     }
 }
 
@@ -26,9 +26,9 @@ export async function getBooksList() {
             return books.data
         }
 
-        return null
+        return null;
     } catch (e) {
-        console.log(e);
+        throw new Error('Could not fetch books list');
     }
 }
 
@@ -41,7 +41,9 @@ export async function getBooksByName({ name }) {
         if (books.status === 200) {
             return books.data
         }
+
+        return null;
     } catch (e) {
-        console.log(e);
+        throw new Error('Could not fetch books by name');
     }
 }

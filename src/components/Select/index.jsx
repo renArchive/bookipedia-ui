@@ -1,8 +1,14 @@
-export function Select ({type, options, handleFilter, filter}) {
+export function Select ({type, options, handleFilter, filter, disabled}) {
     return (
         <div className='filters'>
             <div className='filter_inputLbl'>{`${type}: `}</div>
-            <select className='filter_select' onChange={(e) => handleFilter(e, type)} name={type} id={type}>
+            <select 
+                className='filter_select'
+                onChange={(e) => handleFilter(e, type)}
+                name={type}
+                id={type}
+                disabled={disabled}
+            >
                 <option value={999} defaultValue={filter === 'All' ? true : false}>All</option>
                 {options.map((option, index) => 
                   <option defaultValue={filter === option.id ? true : false} key={index} value={index}>{option.name}</option>

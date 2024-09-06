@@ -10,8 +10,9 @@ export async function getAuthors () {
             return authors.data.authors
         }
 
-        return null
+        return null;
     } catch (e) {
         console.log(e);
+        return null;
     }
 }

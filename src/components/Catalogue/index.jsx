@@ -14,7 +14,7 @@ function Catalogue ({ catalogue }) {
                                     <div>{book.rate}</div>
                                     <StarIcon color="warning" fontSize='large'/>
                                 </div>
-                                <label><a href={`/books/${book.id}`}>See details</a></label>
+                                <label><a href={`/books/${book.id}`}>View details</a></label>
                             </div>
                         </div>
                     )

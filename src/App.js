@@ -3,9 +3,11 @@ import {
   createBrowserRouter
 } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Books from './pages/Books';
-import Login from './pages/Login';
+import Home from 'pages/Home';
+import Books from 'pages/Books';
+import Login from 'pages/Login';
+import BookDetails from 'pages/BookDetails';
+import ErrorBoundary from 'components/ErrorBoundary/error';
 
 
 function App() {
@@ -15,25 +17,31 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/books",
+      path: "books",
       element: <Books />,
     },
     {
-      path: "/login",
+      path: "book/:bookId",
+      element: <BookDetails />,
+    },
+    {
+      path: "login",
       element: <Login />,
     },
     {
-      path: "/signup",
+      path: "signup",
       element: <Login type={'signup'}/>,
     },
     {
-      path: "/reset-password",
+      path: "reset-password",
       element: <Login type={'reset'}/>,
     },
   ]);
   
   return (
-    <RouterProvider router={router}/>
+    <ErrorBoundary>
+      <RouterProvider router={router}/>
+    </ErrorBoundary>
   );
 }
 
