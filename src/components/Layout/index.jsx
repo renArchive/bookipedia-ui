@@ -1,5 +1,5 @@
-import Header from 'components/Header';
-import SearchList from 'components/Search/SearchList';
+import Header from '../Header';
+import SearchList from '../Search/SearchList';
 import './styles.css';
 
 function Layout ({children}) {

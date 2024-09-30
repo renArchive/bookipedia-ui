@@ -1,12 +1,12 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-import Tags from 'components/Tags';
-import Layout from 'components/Layout';
-import Paginator from 'components/Paginator';
-import Catalogue from 'components/Catalogue';
-import { useBookState } from 'hooks/useBookState';
-import { Select, SortSelect } from 'components/Select';
+import Tags from '../../components/Tags';
+import Layout from '../../components/Layout';
+import Paginator from '../../components/Paginator';
+import Catalogue from '../../components/Catalogue';
+import { useBookState } from '../../hooks/useBookState';
+import { Select, SortSelect } from '../../components/Select';
 import './styles.css';
 
 function Books () {

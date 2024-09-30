@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { login } from '../../redux/userSlice';
 
+import { login } from '../../redux/userSlice';
 import './styles.css';
 
 function getLabel (type) {

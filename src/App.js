@@ -3,12 +3,11 @@ import {
   createBrowserRouter
 } from 'react-router-dom';
 
-import Home from 'pages/Home';
-import Books from 'pages/Books';
-import Login from 'pages/Login';
-import BookDetails from 'pages/BookDetails';
-import ErrorBoundary from 'components/ErrorBoundary/error';
-
+import Home from './pages/Home';
+import Books from './pages/Books';
+import Login from './pages/Login';
+import BookDetails from './pages/BookDetails';
+import ErrorBoundary from './components/ErrorBoundary/error';
 
 function App() {
   const router = createBrowserRouter([

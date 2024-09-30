@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { getGenres } from "api/genres";
-import { getAuthors } from "api/authors";
-import { getSeries } from "api/series";
-import { getBooks } from "api/books";
+import { getGenres } from "../api/genres";
+import { getAuthors } from "../api/authors";
+import { getSeries } from "../api/series";
+import { getBooks } from "../api/books";
 
 export const useBookState = () => {
     const [state, setState] = useState({
