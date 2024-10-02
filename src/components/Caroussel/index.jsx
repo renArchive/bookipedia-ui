@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { images } from '../../mockData/carousel';
-import './styles.css';
+import './styles.scss';
 
 function Carousel () {
     const [selectedIndex, setSelectedIndex] = useState(0);

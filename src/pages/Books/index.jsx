@@ -3,11 +3,12 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 import Tags from '../../components/Tags';
 import Layout from '../../components/Layout';
+import NotFound from '../../components/NotFound';
 import Paginator from '../../components/Paginator';
 import Catalogue from '../../components/Catalogue';
 import { useBookState } from '../../hooks/useBookState';
 import { Select, SortSelect } from '../../components/Select';
-import './styles.css';
+import './styles.scss';
 
 function Books () {
     const {
@@ -102,7 +103,7 @@ function Books () {
                   <Catalogue catalogue={catalogue} />
                 </Paginator>
             )}
-            {!isLoading && catalogue.length === 0 && <div>No Books Found :C</div> }
+            {!isLoading && catalogue.length === 0 && <NotFound message={"No Books Found!"} description={"Try with other filters"}/> }
         </Layout>
     )
 }

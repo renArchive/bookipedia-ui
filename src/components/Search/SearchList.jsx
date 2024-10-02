@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import './styles.css';
+import './styles.scss';
 
 export default function SearchList () {
     const navigate = useNavigate();

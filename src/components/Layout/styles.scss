@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.layout_div {
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+    "header"
+    "content";
+
+    & header {
+        background-color: $secondary-dark-color;
+        grid-area: header;
+        color: white;
+    }
+
+    & main {
+        background-color: $neutral-dark-color;
+        grid-area: content;
+    }
+}
+

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import Search from '../Search/SearchInput';
 import { setSearchTerm } from '../../redux/bookSlice';
-import './styles.css';
+import './styles.scss';
 
 function Header () {
     const navigate = useNavigate();

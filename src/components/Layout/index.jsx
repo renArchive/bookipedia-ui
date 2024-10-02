@@ -1,6 +1,6 @@
 import Header from '../Header';
 import SearchList from '../Search/SearchList';
-import './styles.css';
+import './styles.scss';
 
 function Layout ({children}) {
 

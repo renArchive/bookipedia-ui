@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.header {
+    & ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+        align-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:last-child {
+            align-self: flex-end;
+        }
+    }
+
+    & li {
+        margin: 20px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}

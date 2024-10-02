@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .searchResults_div {
     display: flex;
     flex-direction: row-reverse;
@@ -35,7 +37,7 @@
 }
 
 .searchResults_div li:hover {
-    color: orange;
+    color: $accent-color;
     cursor: pointer;
 }
 

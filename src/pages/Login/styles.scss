@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+body {
+    background-color: rgb(249, 244, 244);
+    justify-content: center;
+}
+
+.login {
+    &_container {
+        margin-top: 100px;
+        max-width: 500px;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        & form {
+            width: 300px;
+            background-color: white;
+            padding: 30px;
+        }
+
+        & input {
+            margin-bottom: 20px;
+            height: 25px;
+            width: 250px
+        }
+
+        & button {
+            margin-bottom: 50px;
+        }
+
+        & label {
+            font-size: 13px;
+        }
+
+        & a {
+            color: rgb(17, 76, 96);
+
+            &:hover{
+                color: $accent-color;
+            }
+        }
+    }
+
+    &_div {
+        background-color: rgb(17, 76, 96);
+        max-width: 500px;
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+

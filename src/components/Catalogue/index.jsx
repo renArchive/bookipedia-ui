@@ -1,5 +1,5 @@
 import StarIcon from '@mui/icons-material/Star';
-import './styles.css';
+import './styles.scss';
 
 function Catalogue ({ catalogue }) {
     return (

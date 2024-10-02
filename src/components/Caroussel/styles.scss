@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .carousel {
     height: 500px;
     background-size: cover;
@@ -15,12 +17,12 @@
 
 .carousel_buttons:hover {
     cursor: pointer;
-    height: 60px;
+    //height: 60px;
 }
 
 .carousel_description {
     align-self: flex-end;
-    background-color: rgb(17, 76, 96);
+    background-color: $secondary-dark-color;
     opacity: 0.9;
     color: white;
     font-size: 25px;

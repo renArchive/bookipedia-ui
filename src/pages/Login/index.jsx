@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 
 import { login } from '../../redux/userSlice';
-import './styles.css';
+import './styles.scss';
 
 function getLabel (type) {
     switch(type) {
